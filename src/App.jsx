@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import Todo from './components/Todo.jsx'
 import Title from './components/Title.jsx'
-import Modal from './components/Modal.jsx' 
+import Modal from './components/modal.jsx' 
 
 
 function App() {
@@ -13,11 +13,21 @@ function App() {
       <Title />
 
       <div className="todo__wrapper">
-      <Todo Title="Finish Frontend Simplified"/>
-      <Todo Title="Finish Interview section"/>
-      <Todo Title="Land a $100k job"/>
+      <Todo 
+      title="Finish Frontend Simplified"
+      paragraph="Code along with fronend Simplified step by step."
+      />
+      <Todo 
+      title="Finish Interview section"
+      paragraph="Finish every interview question in the next 6 weeks."
+      />
+      <Todo 
+      title="Land a $100k job"
+      paragraph="Apply to 100 jobs."
+      />
     </div>
-    <Modal />
+   { /*<Modal title="Are you sure you want to delete?"/> 
+    <Modal title="Are you sure you want to add?"/> */}
     </div>
   );
 }
