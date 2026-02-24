@@ -1,8 +1,8 @@
 import './Todo.css'
 
 function Todo({ title, paragraph }) {
-    function deleteTodo(). {
-        console.log('deleteTodo()')
+    function deleteTodo(id) {
+        console.log('deleteTodo()', id)
     }
     return (
         <div className="todo">
