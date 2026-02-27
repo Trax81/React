@@ -6,10 +6,10 @@ import Modal from './components/modal.jsx'
 import React, { useState } from 'react';
 
 
-function App() {
- const [showModal, setShowModal] = useState(false)
-setShowModal(false)
-  return (
+
+const [showModal, setShowModal] = useState(false)
+
+return (
     <div>
      
       <Title />
@@ -17,7 +17,9 @@ setShowModal(false)
         <input type="text" onChange={(event) => {
             console.log(event.target.value)
         }}/>
-        <button>Add todo</button>
+       <button onClick={() => setShowModal(true)}>
+  Add todo
+</button>
       </div>
 
       <div className="todo__wrapper">
