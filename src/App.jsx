@@ -1,13 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
 import Todo from './components/Todo.jsx'
-import Title from './components /Title.jsx'
+import Title from './components/Title.jsx'
 import Modal from './components/modal.jsx'
 import React, { useState } from 'react';
 
 
 
-const [showModal, setShowModal] = useState(false)
+
+function App() {
+  const [showModal, setShowModal] = useState(false)
 
 return (
     <div>
@@ -27,7 +29,7 @@ return (
       <Todo title="Finish Interview section" />
       <Todo title="Land a $100k job" />
     </div>
-   {showModal && <Modal title="Confirm delete?" /> : null }
+   {showModal && <Modal title="Confirm delete?" />}
     
     </div>
   );
